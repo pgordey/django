@@ -76,13 +76,14 @@ WSGI_APPLICATION = 'shop.wsgi.application'
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql",
-        "NAME": "django",
-        "USER": "django",
-        "PASSWORD": "django",
+        "NAME": "django2",
+        "USER": "django2",
+        "PASSWORD": "django2",
         "HOST": "localhost",
         "PORT": 5432,
     }
 }
+
 
 
 # Password validation
