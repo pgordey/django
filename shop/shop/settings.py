@@ -37,11 +37,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'rest_framework',
     'crispy_forms',
     'crispy_bootstrap5',
     'profiles',
     'products',
-    'products.views',
 ]
 
 CRISPY_ALLOWED_TEMPLATE_PACKS = 'bootstrap5'
@@ -84,9 +84,9 @@ WSGI_APPLICATION = 'shop.wsgi.application'
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql",
-        "NAME": "django2",
-        "USER": "django2",
-        "PASSWORD": os.getenv("POSTGRES_PASSWORD", "django2"),
+        "NAME": "django",
+        "USER": "django",
+        "PASSWORD": os.getenv("POSTGRES_PASSWORD", "django"),
         "HOST": "localhost",
         "PORT": 5432,
     }
